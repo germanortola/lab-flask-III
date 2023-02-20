@@ -34,6 +34,37 @@ small-api/
 
 ### Iteration 2
 
+You now have an API that runs queries based on parameters. Now, we will seed a database. We do this through POST methods.
+
+Post methods can only be done through python.
+
+```python
+requests.post("http://127.0.0.1:9000/insert-into-employees", params = params)
+```
+
+1. Create a route with the endpoint: `"/insert-into-employees"`
+2. Define a function in config/sql_connection.py that that will receive as arguments whatever you want to insert.
+3. Call that function under another one below your route.
+4. From python, create a dictionary named params where each key you're passing is the name of the column and each value will be your inserted value. Then:
+
+```python
+requests.post("http://127.0.0.1:9000/insert-into-employees", params = params)
+```
+
+### Iteration 3
+
+Create and parametrize as many endpoints as you find useful. Is there some aggregations you can do?
+
+### Iteration 4
+
+1. Choose a database: a csv of your liking
+2. Upload that database to [free sql database](https://www.freesqldatabase.com/)
+3. Establish a connection to your database through Workbench to your db on the cloud
+
+### BONUS
+
+Deploy your API to [heroku](https://devcenter.heroku.com/articles/git). This will allow you to have your API up and running on a remote address.
+
 ## Submission
 
 Upon completion, add your deliverables to git. Then commit git and push your branch to the remote.
