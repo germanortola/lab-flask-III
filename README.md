@@ -28,7 +28,7 @@ small-api/
         sql_queries.py
 ```
 
-- From your terminal, run `python main.py`
+- From your terminal, run: `python main.py`
 - In that terminal, you'll get feedback of your prints and the errors.
 - After the server is up and running you'll be able to go into your browser and access the endpoints you defined.
 
@@ -37,7 +37,3 @@ small-api/
 ## Submission
 
 Upon completion, add your deliverables to git. Then commit git and push your branch to the remote.
-
-## Resources
-
-[]()
