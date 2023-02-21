@@ -11,6 +11,3 @@ password = os.getenv("sql_pass")
 dbName = "employees"
 connectionData=f"mysql+pymysql://root:{password}@localhost/{dbName}"
 engine = alch.create_engine(connectionData)
-
-
-
